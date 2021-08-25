@@ -6,7 +6,7 @@ pipeline {
             steps {
                 def match = "groovy" =~ "groovy"
                 if(match) {
-                   println match[0]
+                   println match[o]
                    }else{
                    println "no match"
                    }
