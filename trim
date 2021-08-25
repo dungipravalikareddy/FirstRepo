@@ -1,9 +1,21 @@
-class Test {
+pipeline {
+    agent any
+
+    stages {
+        stage('trim') {
+            steps {
+                class Test {
 	public static void main(String[] args) {
 		def listOfString = ["  A  ", "  B  ", "  C  "]
 		for (i in 0..<listOfString.size()) {
 			listOfString[i] = listOfString[i].trim()
 		}
 		println listOfString
-	}
+	        }
+               }
+            }
+        }
+    }
 }
+
+
