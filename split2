@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('split') {
+            steps {
+                public class split {
+    public static void main(String args[])
+    {
+        String str = "groovy@script@groovy";
+        String[] arrOfStr = str.split("@", 5);
+  
+        for (String a : arrOfStr)
+            System.out.println(a);
+    }
+}
+            }
+        }
+    }
+}
