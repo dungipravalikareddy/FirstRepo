@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('trim') {
+            steps {
+                public class Example{
+     public static void main(String args[]){
+           String s1=" groovy ";
+           System.out.println(s1+"script");
+           System.out.println(s1.trim()+"script");
+     }
+}
+            }
+        }
+    }
+}
