@@ -1,7 +1,9 @@
 class Test {
 	public static void main(String[] args) {
 		def listOfString = ["  A  ", "  B  ", "  C  "]
-		listOfString = listOfString*.trim()
+		for (i in 0..<listOfString.size()) {
+			listOfString[i] = listOfString[i].trim()
+		}
 		println listOfString
 	}
 }
