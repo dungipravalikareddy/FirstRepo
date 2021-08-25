@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('split') {
+            steps {
+                def sampleText = "A1B23C456D"
+                 println sampleText.split(/\d/)
+            }
+        }
+    }
+}
