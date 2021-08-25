@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('match') {
+            steps {
+                def match = "groovy" =~ "groovy"
+                if(match) {
+                   println match[0]
+                   }else{
+                   println "no match"
+                   }
+            }
+        }
+    }
+}
